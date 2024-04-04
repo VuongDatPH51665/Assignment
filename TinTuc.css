@@ -1,0 +1,125 @@
+.logo{
+    margin-left: 20px;
+}
+.container{
+    width: auto;
+    margin: 0 auto;
+}
+.bg{
+    height: auto;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    background-color: rgb(0, 38, 255);
+}
+.nav a {
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: green;
+    color: white;
+}
+footer{
+    background-color: blue;
+    height: auto;
+    width: auto;
+}
+footer p{
+    color: white;
+}
+.tong1{
+    display: flex;
+}
+.box2{
+    margin-left: 20px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.menudoc{
+    background-color: rgb(187, 184, 184);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.menudoc h3{
+    font-size: 18px;
+    background: blue;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+.menudoc ul{
+    list-style: none;
+}
+.menudoc ul li{
+    color: black;
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+.menudoc ul li:hover{
+    background: red;
+}
+.grid{
+    display: grid;
+}
+.tong{
+    grid-column: 1/3;
+    grid-row: 1/10;
+    background-color: rgb(187, 184, 184);
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ndung1{
+    text-align: center;
+}
+.ndung1 p{
+    font-size: 18px;
+}
+.ndung2 h2{
+    background-color: blue;
+}
+.ndung3 h2{
+    background-color: blue;
+}
+.ndung2 p{
+    font-size: 18px;
+}
+.ndung3 p{
+    font-size: 18px;
+}
+
+@media screen and (max-width:480px) {
+    .nav,
+    .menudoc,
+    .tong,
+    .tong1{
+        flex-direction: column;
+    }
+    .menudoc{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 0px;
+    }
+    .tong{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+@media screen {
+    .menudoc h3{
+        font-size: 12px;
+    }
+    .menudoc li{
+        font-size: 12px;
+    }
+}
